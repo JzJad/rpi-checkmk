@@ -21,9 +21,4 @@ Working docker compose file is in the repository. Other wise you can run the fol
 
 
 ## TODO
-- [X] Github actions
-- [X] Specify default site name
-- [X] Better Startup/entry Points
-- [X] Work on building 32bit arm/v7/hf based on bullseye (Possibly test it on jammy)
-    - [X] Add variables/args for distro, as well as cmk version
-- [X] Example compose file and run commands.
+- [ ] Await official ARM packages!
