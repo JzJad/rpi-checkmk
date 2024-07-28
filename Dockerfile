@@ -1,11 +1,13 @@
 ARG IMAGE_CMK_BASE="ubuntu:jammy"
 
 FROM ${IMAGE_CMK_BASE}
-LABEL org.opencontainers.image.authors="Rogier Gerritse <rogierg@electronicsamurai.com>,Jimmy Bristow <jbristow@home-lab.tech>"
+LABEL org.opencontainers.image.authors="Jimmy Bristow <jbristow@home-lab.tech>"
 
-ARG CMK_VERSION="2.3.0p11"
+ARG CMK_VERSION="2.2.0p22"
+#Last built version: 2.2.0p22
+#Unsupported: 2.3.0p11
 
-# ENV TZ="America/Chicago"
+ENV TZ="America/Chicago"
 ENV DEBIAN_FRONTEND="noninteractive"
 
 

@@ -1,7 +1,13 @@
 # CheckMK-ARM
 [![Docker](https://github.com/JzJad/rpi-checkmk/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/JzJad/rpi-checkmk/actions/workflows/docker-publish.yml)
 
-checkmk as a docker container for ARM[hf/v7/v8]/ devices such as the raspberry pi, and Oracle Ampere A1 Compute.
+## Current version: 2.2.0p22 (Updates on hold)
+
+As mentioned on [chrisss404's](https://github.com/chrisss404/check-mk-arm) readme, there is an official commitment to add support for certain ARM architectures by Checkmk: [Checkmk – our road to ARM support.](https://checkmk.com/blog/checkmk-our-road-arm-support) as this is the case they have retired the project, as such there will be no more updates to the base image at this moment. I may test in place upgrades later, or you can your self.
+
+---
+
+checkmk as a docker container for ARM[v7/v8]/ devices such as the raspberry pi, and Oracle Ampere A1 Compute.
 
 Working docker compose file is in the repository. Other wise you can run the following.
 
