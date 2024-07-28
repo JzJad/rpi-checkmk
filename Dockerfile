@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.authors="Rogier Gerritse <rogierg@electronicsamur
 
 ARG CMK_VERSION="2.3.0p11"
 
-ENV TZ="America/Chicago"
+# ENV TZ="America/Chicago"
 ENV DEBIAN_FRONTEND="noninteractive"
 
 
