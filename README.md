@@ -1,7 +1,6 @@
 # CheckMK-ARM
 [![Docker](https://github.com/JzJad/rpi-checkmk/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/JzJad/rpi-checkmk/actions/workflows/docker-publish.yml)
 
-
 checkmk as a docker container for ARM[hf/v7/v8]/ devices such as the raspberry pi, and Oracle Ampere A1 Compute.
 
 
