@@ -3,7 +3,7 @@ ARG IMAGE_CMK_BASE="ubuntu:jammy"
 FROM ${IMAGE_CMK_BASE}
 LABEL org.opencontainers.image.authors="Rogier Gerritse <rogierg@electronicsamurai.com>,Jimmy Bristow <jbristow@home-lab.tech>"
 
-ARG CMK_VERSION="2.1.0p18"
+ARG CMK_VERSION="2.3.0"
 
 ENV TZ="America/Chicago"
 ENV DEBIAN_FRONTEND="noninteractive"
