@@ -3,7 +3,6 @@
 
 checkmk as a docker container for ARM[hf/v7/v8]/ devices such as the raspberry pi, and Oracle Ampere A1 Compute.
 
-
 Working docker compose file is in the repository. Other wise you can run the following.
 
 ### arm64[v8/aarch64] (Based on ubuntu:jammy)
