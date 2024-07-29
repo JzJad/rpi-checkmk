@@ -1,4 +1,4 @@
-ARG IMAGE_CMK_BASE
+ARG IMAGE_CMK_BASE="ubuntu:jammy"
 
 FROM ${IMAGE_CMK_BASE}
 LABEL org.opencontainers.image.authors="Jimmy Bristow <jbristow@home-lab.tech>"
