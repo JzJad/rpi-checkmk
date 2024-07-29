@@ -7,7 +7,7 @@ As mentioned on [chrisss404's](https://github.com/chrisss404/check-mk-arm) readm
 
 ---
 
-checkmk as a docker container for ARM[v7/v8]/ devices such as the raspberry pi, and Oracle Ampere A1 Compute.
+# checkmk as a docker container for ARM[v7/v8]/ devices such as the raspberry pi, and Oracle Ampere A1 Compute.
 
 
 
@@ -19,8 +19,7 @@ Docker run command
 
 `sudo docker run -d --name checkmk -v /opt/omd/sites:/opt/omd/sites -p 5000:5000 -p 8000:8000 ghcr.io/jzjad/rpi-checkmk-arm64:latest`
 
-
-
+---
 
 ### arm32[v7/hf] (Based on debian:bullseye, please note this version is behind and will likely not be updated again.)
 
@@ -29,6 +28,8 @@ Docker run command
 Docker run command
 
 `sudo docker run -d --name checkmk -v /opt/omd/sites:/opt/omd/sites -p 5000:5000 -p 8000:8000 ghcr.io/jzjad/rpi-checkmk-armhf:latest`
+
+---
 
 ### Update from an older version
 
