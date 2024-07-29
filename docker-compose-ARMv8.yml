@@ -8,4 +8,4 @@ services:
         ports:
             - '5000:5000'
             - '8000:8000'
-        image: 'ghcr.io/jzjad/rpi-checkmk-arm64:latest'
+        image: 'ghcr.io/jzjad/rpi-checkmk:latest'
