@@ -1,0 +1,11 @@
+services:
+    checkmk-arm:
+        container_name: checkmk
+        volumes:
+            - './sites:/opt/omd/sites'
+        environment:
+            - CMK_SITE_ID=Monitor
+        ports:
+            - '5000:5000'
+            - '8000:8000'
+        image: 'ghcr.io/jzjad/rpi-checkmk-armhf:latest'
