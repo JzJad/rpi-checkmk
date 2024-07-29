@@ -10,12 +10,11 @@ LABEL org.opencontainers.image.authors="Jimmy Bristow <jbristow@home-lab.tech>"
 ENV TZ="America/Chicago"
 ENV DEBIAN_FRONTEND="noninteractive"
 
-
-COPY *.sh /app/*
+RUN mkdir /app/backups -p
+COPY *.sh /app
 RUN chmod +x /app/*.sh
 
 RUN apt-get update && \
-  mkdir /app/backups && \
   dpkg --print-architecture && \
   ARCH=$(dpkg --print-architecture) && \
   CODENAME=$(env -i bash -c '. /etc/os-release; echo $VERSION_CODENAME') && \
