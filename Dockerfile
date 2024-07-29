@@ -37,5 +37,5 @@ HEALTHCHECK --interval=1m --timeout=5s \
     CMD omd status || exit 1
 
 WORKDIR /app
-VOLUME [ "/backups" ]
+VOLUME [ "/app/backups" ]
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
