@@ -7,11 +7,11 @@ As mentioned on [chrisss404's](https://github.com/chrisss404/check-mk-arm) readm
 
 ---
 
-# checkmk as a docker container for ARM[v7/v8]/ devices such as the raspberry pi, and Oracle Ampere A1 Compute.
+### checkmk as a docker container for ARM[v7/v8]/ devices such as the raspberry pi, and Oracle Ampere A1 Compute.
 
 
 
-### arm64[v8/aarch64] (Based on ubuntu:jammy)
+## arm64[v8/aarch64] (Based on ubuntu:jammy)
 
 [Compose File](https://github.com/JzJad/rpi-checkmk/blob/master/docker-compose-ARMv8.yml)
 
@@ -21,7 +21,7 @@ Docker run command
 
 ---
 
-### arm32[v7/hf] (Based on debian:bullseye, please note this version is behind and will likely not be updated again.)
+## arm32[v7/hf] (Based on debian:bullseye, please note this version is behind and will likely not be updated again.)
 
 [Compose File](https://github.com/JzJad/rpi-checkmk/blob/master/docker-compose-ARMv7.yml)
 
@@ -31,11 +31,11 @@ Docker run command
 
 ---
 
-### Update from an older version
+## Update from an older version
 
 `sudo docker exec -it checkmk /bin/sh -c "curl https://raw.githubusercontent.com/JzJad/rpi-checkmk/master/upgrade.sh | bash"`
 
 
 
-## TODO
+### TODO
 - [ ] Await official ARM packages!
