@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND="noninteractive"
 
 
 COPY *.sh /app
-RUN chmod +x /app/docker-entrypoint.sh /app/get-package.sh
+RUN chmod +x /app/*.sh
 
 RUN apt-get update && \
   mkdir /app/backups && \
