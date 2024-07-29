@@ -3,6 +3,7 @@ services:
         container_name: checkmk
         volumes:
             - './sites:/opt/omd/sites'
+            - './backups:/app/backups'
         environment:
             - CMK_SITE_ID=Monitor
         ports:

@@ -15,6 +15,7 @@ COPY *.sh /app
 RUN chmod +x /app/docker-entrypoint.sh /app/get-package.sh
 
 RUN apt-get update && \
+  mkdir /app/backups && \
   dpkg --print-architecture && \
   ARCH=$(dpkg --print-architecture) && \
   CODENAME=$(env -i bash -c '. /etc/os-release; echo $VERSION_CODENAME') && \
@@ -36,4 +37,5 @@ HEALTHCHECK --interval=1m --timeout=5s \
     CMD omd status || exit 1
 
 WORKDIR /app
+VOLUME [ "/backups" ]
 ENTRYPOINT ["/app/docker-entrypoint.sh"]

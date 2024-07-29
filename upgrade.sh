@@ -16,9 +16,9 @@ else
     echo "Starting upgrade process 
 fi
 
-
-echo "Creating a site backup located at: /app/updatebackup.tar"
-/usr/bin/omd backup Monitor /app/updatebackup.tar
+mkdir /app/backups -p
+echo "Creating a site backup located at: /app/backups/updatebackup.tar"
+/usr/bin/omd backup Monitor /app/backups/updatebackup.tar
 
 
 curl https://raw.githubusercontent.com/JzJad/rpi-checkmk/master/get-package.sh | bash
